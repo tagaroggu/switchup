@@ -1,0 +1,53 @@
+{
+  "name": "switchup",
+  "version": "0.0.0",
+  "description": "Transform signals from one library into another via nanostores",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./from": {
+      "preact-signals": "./from/preact-signals.js",
+      "vue-reactivity": "./from/vue-reactivity.js"
+    },
+    "./to": {
+      "preact-signals": "./to/preact-signals.js",
+      "vue-reactivity": "./to/vue-reactivity.js"
+    },
+    "./preact-signals": {
+      "to": "./to/preact-signals.js",
+      "from": "./from/preact-signals.js"
+    },
+    "./vue-reactivity": {
+      "to": "./to/vue-reactivity.js",
+      "from": "./from/vue-reactivity.js"
+    }
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagaroggu/switchup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tagaroggu/switchup/issues"
+  },
+  "homepage": "https://github.com/tagaroggu/switchup#readme",
+  "dependencies": {
+    "nanostores": "^0.9.2"
+  },
+  "peerDependencies": {
+    "@preact/signals-core": "^1.x",
+    "@vue/reactivity": "^3.x"
+  },
+  "peerDependenciesMeta": {
+    "@preact/signals-core": {
+      "optional": true
+    },
+    "@vue/reactivity": {
+      "optional": true
+    }
+  }
+}
