@@ -7,9 +7,17 @@
   "exports": {
     ".": "./index.js",
     "./from/preact-signals": "./from/preact-signals.js",
+    "./from/preact": "./from/preact-signals.js",
     "./from/vue-reactivity": "./from/vue-reactivity.js",
+    "./from/vue": "./from/vue-reactivity.js",
+    "./from/rx": "./from/rx.js",
+    "./from/rxjs": "./from/rx.js",
     "./to/preact-signals": "./to/preact-signals.js",
-    "./to/vue-reactivity": "./to/vue-reactivity.js"
+    "./to/preact": "./to/preact-signals",
+    "./to/vue-reactivity": "./to/vue-reactivity.js",
+    "./to/vue": "./to/vue-reactivity.js",
+    "./to/rx": "./to/rx.js",
+    "./to/rxjs": "./to/rx.js"
   },
   "scripts": {},
   "repository": {
@@ -29,7 +37,8 @@
   "peerDependencies": {
     "@angular/core": "^16.1.2",
     "@preact/signals-core": "^1.x",
-    "@vue/reactivity": "^3.x"
+    "@vue/reactivity": "^3.x",
+    "rxjs": "^7.8.1"
   },
   "peerDependenciesMeta": {
     "@preact/signals-core": {
