@@ -5,6 +5,9 @@ Transform signals from one library into another via nanostores
 - `@preact/signals-core`, which is used by preact
 - `nanostores`, which is used as the intermediate store for transforming
 - `@vue/reactivity`, which is used in vue 3
+- `rxjs`, observables and subjects are supported
+
+## Roadmap
 - `@angular/core` signals are planned for support, but currently I do not know how to use Angular and signals are still in developer preview.
 
 ## Example use
