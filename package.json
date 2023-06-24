@@ -49,6 +49,9 @@
     },
     "@angular/core": {
       "optional": true
+    },
+    "rxjs": {
+      "optional": true
     }
   }
 }
