@@ -9,6 +9,7 @@ Transform signals from one library into another via nanostores
 
 ## Roadmap
 - `@angular/core` signals are planned for support, but currently I do not know how to use Angular and signals are still in developer preview.
+- `solid-js` signals functionality is implemented but not yet tested so not yet labelled as supported.
 
 ## Example use
 ```vue

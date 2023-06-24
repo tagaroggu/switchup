@@ -38,7 +38,8 @@
     "@angular/core": "^16.1.2",
     "@preact/signals-core": "^1.x",
     "@vue/reactivity": "^3.x",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "solid-js": "^1.7.6"
   },
   "peerDependenciesMeta": {
     "@preact/signals-core": {
@@ -51,6 +52,9 @@
       "optional": true
     },
     "rxjs": {
+      "optional": true
+    },
+    "solid-js": {
       "optional": true
     }
   }
