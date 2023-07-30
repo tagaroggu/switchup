@@ -7,9 +7,9 @@ Transform signals from one library into another via nanostores
 - `@vue/reactivity`, which is used in vue 3
 - `rxjs`, observables and subjects are supported
 - `svelte`, as Nanostores implements [svelte's store contract](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values-store-contract)
+- `solid-js`
 
 ## Roadmap
-- `solid-js` signals functionality is implemented but not yet tested so not yet labelled as supported.
 - `@builder.io/qwik`
 
 ## Example use

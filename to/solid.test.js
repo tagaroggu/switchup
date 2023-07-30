@@ -2,14 +2,19 @@ import assert from "node:assert";
 
 import { atom as a } from "nanostores";
 import { toSolidSignal } from "./solid.js";
+import { createRoot, createEffect } from "solid-js";
 
-const atom = a(0);
-const [get, set] = toSolidSignal(atom);
 
-assert(atom.get() === get(), 'Atom and signal should have the same value');
+const [atom, [_get, set]] = createRoot(() => {
+    const atom = a(0);
+    const signal = toSolidSignal(atom);
 
-set(1);
-assert(atom.get() === 1, 'Atom value should have updated after changing signal value');
+    createEffect(() => {
+        assert(signal[0]() === atom.get(), `Signal and atom value should be the same`);
+    });
 
-atom.set(2);
-assert(get() === 2, 'Signal value should have updated after changing atom value');
+    return [atom, signal]
+})
+
+atom.set(1);
+set(2);
